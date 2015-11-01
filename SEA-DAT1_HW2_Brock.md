@@ -22,6 +22,13 @@ order_id        quantity        item_name       choice_description      item_pri
 
 mbrock@NA01495L MINGW64 /c/users/mbrock/desktop/githubclones/GA-SEA-DAT1/data (master)
 $ tail chipotle.tsv
+
+
+
+
+
+
+
 1831    1       Carnitas Bowl   [Fresh Tomato Salsa, [Fajita Vegetables, Rice, Black Beans, Cheese, Sour Cream, Lettuce]]       $9.25
 1831    1       Chips   NULL    $2.15
 1831    1       Bottled Water   NULL    $1.50
@@ -47,3 +54,31 @@ $ wc -l chipotle.tsv
 4623 chipotle.tsv
 
 Q3 answer: There are a total of 4623 lines (including column headers)
+
+
+
+Q4 code and answer:
+USing grep piped to wc -l
+Matt@Corvinius MINGW64 /c/users/Matt/githubclones/GA-SEA-DAT1/data (master)
+$ grep "Steak Burrito" chipotle.tsv | wc -l
+368
+
+Matt@Corvinius MINGW64 /c/users/Matt/githubclones/GA-SEA-DAT1/data (master)
+$ grep "Chicken Burrito" chipotle.tsv | wc -l
+553
+
+Based on count of orders with at least one order of steak burrito or chicken burrito, it seems that chicken burritos are more popular. 
+(Technically if there were many orders of steak burritos with multiple quantities, counting number of lines may not be a valid approach. But an eyeball of the data suggests there are only a handful of orders that include more than one steak burrito.)
+
+
+Q5 code and answer:
+Matt@Corvinius MINGW64 /c/users/Matt/githubclones/GA-SEA-DAT1/data (master)
+$ grep "Chicken Burrito" chipotle.tsv | grep "Black Beans" |  wc -l
+282
+
+Matt@Corvinius MINGW64 /c/users/Matt/githubclones/GA-SEA-DAT1/data (master)
+$ grep "Chicken Burrito" chipotle.tsv | grep "Pinto Beans" | wc -l
+105
+
+Based on a line count of the occurrence of "Chicken Burrito" with "Black Beans" v. with "Pinto Beans", it seems that black beans are more popular.
+Same limitation/caveat in the discussion of steak burritos applies here - though again there don't seem to be many orders with a multiple quantity of the same item for this menu item.
