@@ -81,4 +81,41 @@ $ grep "Chicken Burrito" chipotle.tsv | grep "Pinto Beans" | wc -l
 105
 
 Based on a line count of the occurrence of "Chicken Burrito" with "Black Beans" v. with "Pinto Beans", it seems that black beans are more popular.
-Same limitation/caveat in the discussion of steak burritos applies here - though again there don't seem to be many orders with a multiple quantity of the same item for this menu item.
+Same limitation/caveat in the discussion of steak burritos applies here - though again there don't seem to be many orders with a multiple quantity of the same item for this menu item, so counting lines is probably a safe approach.
+
+Q6 code and answer:
+Matt@Corvinius MINGW64 ~/githubclones/GA-SEA-DAT1 (master)
+$ find . -name "*.tsv" -o -name "*.csv"
+./data/airlines.csv
+./data/bank-additional.csv
+./data/bikeshare.csv
+./data/chipotle.tsv
+./data/drinks.csv
+./data/hitters.csv
+./data/imdb_1000.csv
+./data/sms.tsv
+./data/titanic.csv
+./data/ufo.csv
+./data/vehicles_test.csv
+./data/vehicles_train.csv
+./data/yelp.csv
+
+Q7 code and answer:
+Matt@Corvinius MINGW64 ~/githubclones/GA-SEA-DAT1 (master)
+$ grep -o -i -r dictionary . | wc -w
+784
+
+Based on this, I think there are 784 occurrences of the word "dictionary" in the GA-SEA-DAT1 repo, regardless of case.
+
+Q8:
+Matt@Corvinius MINGW64 ~/githubclones/GA-SEA-DAT1/data (master)
+$ uniq chipotle.tsv | wc -l
+4589
+
+Matt@Corvinius MINGW64 ~/githubclones/GA-SEA-DAT1/data (master)
+$ wc -l chipotle.tsv
+4623 chipotle.tsv
+
+
+Matt@Corvinius MINGW64 ~/githubclones/GA-SEA-DAT1/data (master)
+$ cut -f1,2,3,4,5 chipotle.tsv >> new_chipotle.tsv
