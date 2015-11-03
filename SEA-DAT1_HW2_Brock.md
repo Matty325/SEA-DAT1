@@ -1,13 +1,13 @@
-Q1) Code:
-mbrock@NA01495L MINGW64 /c/users/mbrock/desktop/githubclones/GA-SEA-DAT1 (master)
+##Q1) Code:
+   MINGW64 /c/users/mbrock/desktop/githubclones/GA-SEA-DAT1 (master)
 $ ls
 02_git_github.pdf  code/  data/  homework/  new_file.md  notebooks/  other/  parked/  project/  README.md  slides/  syllabus.md
 
-mbrock@NA01495L MINGW64 /c/users/mbrock/desktop/githubclones/GA-SEA-DAT1 (master)
+   MINGW64 /c/users/mbrock/desktop/githubclones/GA-SEA-DAT1 (master)
 $ cd data/
 
-mbrock@NA01495L MINGW64 /c/users/mbrock/desktop/githubclones/GA-SEA-DAT1/data (master)
-mbrock@NA01495L MINGW64 /c/users/mbrock/desktop/githubclones/GA-SEA-DAT1/data (master)
+   MINGW64 /c/users/mbrock/desktop/githubclones/GA-SEA-DAT1/data (master)
+   MINGW64 /c/users/mbrock/desktop/githubclones/GA-SEA-DAT1/data (master)
 $ head chipotle.tsv
 order_id        quantity        item_name       choice_description      item_price
 1       1       Chips and Fresh Tomato Salsa    NULL    $2.39
@@ -20,13 +20,8 @@ order_id        quantity        item_name       choice_description      item_pri
 4       1       Steak Burrito   [Tomatillo Red Chili Salsa, [Fajita Vegetables, Black Beans, Pinto Beans, Cheese, Sour Cream, Guacamole, Lettuce]]  $11.75
 4       1       Steak Soft Tacos        [Tomatillo Green Chili Salsa, [Pinto Beans, Cheese, Sour Cream, Lettuce]]       $9.25
 
-mbrock@NA01495L MINGW64 /c/users/mbrock/desktop/githubclones/GA-SEA-DAT1/data (master)
+   MINGW64 /c/users/mbrock/desktop/githubclones/GA-SEA-DAT1/data (master)
 $ tail chipotle.tsv
-
-
-
-
-
 
 
 1831    1       Carnitas Bowl   [Fresh Tomato Salsa, [Fajita Vegetables, Rice, Black Beans, Cheese, Sour Cream, Lettuce]]       $9.25
@@ -41,29 +36,28 @@ $ tail chipotle.tsv
 1834    1       Chicken Salad Bowl      [Fresh Tomato Salsa, [Fajita Vegetables, Pinto Beans, Lettuce]] $8.75
 
 
-Q1 Discussion:
+##Q1 Discussion:
 This looks like a one-to-many table that represents orders by item. Each row represents an item, and a number of items in an order, a description of the item and its custom toppings (if applicable), as well as a subtotal price for the number of items on that line.  
 The order number aggregates the order. E.g., the first four rows of data represent one order that had 4 items in order #1. Data row five represents order #2 which had two chicken bowls wiht same toppings, and the total price for two bowls of $16.98
 the last thre rows represent the items that were in order 1834).
 
-Q2: Discussion: Based on the last unique order ID of 1834, that suggests that there are 1834 order records in this file. 
+##Q2: Discussion: Based on the last unique order ID of 1834, that suggests that there are 1834 order records in this file. 
 
-Q3 Code:
-mbrock@NA01495L MINGW64 /c/users/mbrock/desktop/githubclones/GA-SEA-DAT1/data (master)
+##Q3 Code:
+   MINGW64 /c/users/mbrock/desktop/githubclones/GA-SEA-DAT1/data (master)
 $ wc -l chipotle.tsv
 4623 chipotle.tsv
 
-Q3 answer: There are a total of 4623 lines (including column headers)
+##Q3 answer: There are a total of 4623 lines (including column headers)
 
 
-
-Q4 code and answer:
+##Q4 code and answer:
 USing grep piped to wc -l
-Matt@Corvinius MINGW64 /c/users/Matt/githubclones/GA-SEA-DAT1/data (master)
+  MINGW64 /c/users/Matt/githubclones/GA-SEA-DAT1/data (master)
 $ grep "Steak Burrito" chipotle.tsv | wc -l
 368
 
-Matt@Corvinius MINGW64 /c/users/Matt/githubclones/GA-SEA-DAT1/data (master)
+  MINGW64 /c/users/Matt/githubclones/GA-SEA-DAT1/data (master)
 $ grep "Chicken Burrito" chipotle.tsv | wc -l
 553
 
@@ -71,20 +65,20 @@ Based on count of orders with at least one order of steak burrito or chicken bur
 (Technically if there were many orders of steak burritos with multiple quantities, counting number of lines may not be a valid approach. But an eyeball of the data suggests there are only a handful of orders that include more than one steak burrito.)
 
 
-Q5 code and answer:
-Matt@Corvinius MINGW64 /c/users/Matt/githubclones/GA-SEA-DAT1/data (master)
+##Q5 code and answer:
+  MINGW64 /c/users/Matt/githubclones/GA-SEA-DAT1/data (master)
 $ grep "Chicken Burrito" chipotle.tsv | grep "Black Beans" |  wc -l
 282
 
-Matt@Corvinius MINGW64 /c/users/Matt/githubclones/GA-SEA-DAT1/data (master)
+  MINGW64 /c/users/Matt/githubclones/GA-SEA-DAT1/data (master)
 $ grep "Chicken Burrito" chipotle.tsv | grep "Pinto Beans" | wc -l
 105
 
 Based on a line count of the occurrence of "Chicken Burrito" with "Black Beans" v. with "Pinto Beans", it seems that black beans are more popular.
 Same limitation/caveat in the discussion of steak burritos applies here - though again there don't seem to be many orders with a multiple quantity of the same item for this menu item, so counting lines is probably a safe approach.
 
-Q6 code and answer:
-Matt@Corvinius MINGW64 ~/githubclones/GA-SEA-DAT1 (master)
+##Q6 code and answer:
+  MINGW64 ~/githubclones/GA-SEA-DAT1 (master)
 $ find . -name "*.tsv" -o -name "*.csv"
 ./data/airlines.csv
 ./data/bank-additional.csv
@@ -100,22 +94,28 @@ $ find . -name "*.tsv" -o -name "*.csv"
 ./data/vehicles_train.csv
 ./data/yelp.csv
 
-Q7 code and answer:
-Matt@Corvinius MINGW64 ~/githubclones/GA-SEA-DAT1 (master)
+##Q7 code and answer:
+  MINGW64 ~/githubclones/GA-SEA-DAT1 (master)
 $ grep -o -i -r dictionary . | wc -w
 784
 
 Based on this, I think there are 784 occurrences of the word "dictionary" in the GA-SEA-DAT1 repo, regardless of case.
 
-Q8:
-Matt@Corvinius MINGW64 ~/githubclones/GA-SEA-DAT1/data (master)
+##Q8 Code and answer:
+  MINGW64 ~/githubclones/GA-SEA-DAT1/data (master)
 $ uniq chipotle.tsv | wc -l
 4589
 
-Matt@Corvinius MINGW64 ~/githubclones/GA-SEA-DAT1/data (master)
+  MINGW64 ~/githubclones/GA-SEA-DAT1/data (master)
 $ wc -l chipotle.tsv
 4623 chipotle.tsv
 
-
-Matt@Corvinius MINGW64 ~/githubclones/GA-SEA-DAT1/data (master)
+ MINGW64 ~/githubclones/GA-SEA-DAT1/data (master)
 $ cut -f1,2,3,4,5 chipotle.tsv >> new_chipotle.tsv
+
+Based on the differential in the record counts between the original file and the file with sort and uniq run upon it, there are some records getting dropped as duplicates.
+Upon furhter examination, this seems to be due to inconsistencies in the data. For example, order 129 has two steak burritos with exactly the same toppings, but each is broken out as a separate line item within the order. 
+In most of the data, however, it seems to be the convention to sum and subtotal when more than one of an identical item shows up in an order (such as the two identical chicken salad bowls in order #60). 
+Without identifying and resolving this issue, an analysis might be distorted if one made assumptions about how order items were grouped and counted.
+
+
