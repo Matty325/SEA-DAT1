@@ -1,3 +1,5 @@
+### MBrock HW2 Submission
+
 ##Q1) Code:
    MINGW64 /c/users/mbrock/desktop/githubclones/GA-SEA-DAT1 (master)
 $ ls
@@ -41,7 +43,8 @@ This looks like a one-to-many table that represents orders by item. Each row rep
 The order number aggregates the order. E.g., the first four rows of data represent one order that had 4 items in order #1. Data row five represents order #2 which had two chicken bowls wiht same toppings, and the total price for two bowls of $16.98
 the last thre rows represent the items that were in order 1834).
 
-##Q2: Discussion: Based on the last unique order ID of 1834, that suggests that there are 1834 order records in this file. 
+##Q2: Discussion: 
+Based on the last unique order ID of 1834, that suggests there are 1834 order records in this file. 
 
 ##Q3 Code:
    MINGW64 /c/users/mbrock/desktop/githubclones/GA-SEA-DAT1/data (master)
