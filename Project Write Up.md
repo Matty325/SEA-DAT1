@@ -22,7 +22,7 @@ I am aware of a range of data sets at the US federal level which should theoreti
 
 
 ##_Why did you choose this topic?_
-Earlier this year I went as a voter lobbyist to Olympia to talk to legislators and lobby on behalf of the ACLU. It was a very eye opening experience seeing the role that lobbyists play in curating information for legislators - not just fund raising for causes and arguing for positions - and how access works.
-Secondly, I feel there is an imbalance in how data an analytics are used in the political world: too much is focused on targeting messages to voters and for fundraising, and not enough is focused on measuring whether our government and the people we elect are doing good work that is based on data and reason. It feels like technology is disrupting democracy, and not in a good way. So I want to do something that counter-balances that trend. So in general I'm interested in government accountabilty and transparency, and empowering voters. 
+Earlier this year I went as a voter lobbyist to Olympia to talk to legislators and lobby on behalf of the ACLU. It was a very eye opening experience seeing the role that lobbyists play in curating information for legislators - not just fund raising for causes and arguing for positions - and also to see first hand how access works.
+Secondly, I feel there is an imbalance in how data and analytics are used in the political world: too much is focused on targeting messages to voters and for fundraising, and not enough is focused on measuring whether our government and the people we elect are doing good work and getting good outcomes. It feels like technology is disrupting democracy, and not in a good way. So I want to do something that counter-balances that trend, and in general I'm interested in government accountabilty and transparency, and voter empowerment. 
 
-Thirdly, there seems to be a good amount of data but room for more work to be done with it.  
+Thirdly, there seems to be a good amount of data in this space and room for more work to be done with it.  
