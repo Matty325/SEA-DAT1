@@ -17,7 +17,7 @@ This data may also be interesting to build a social network type analysis based 
 
 
 ##_What do you know about the data so far?_
-I am aware of a range of data sets which should theoretically be possible to string together, but I have not yet evaluated them. It's possible that once I look at it more closely, I may need to change the scope of the project, look for data outside the US, or at the US state level, rather than US federal government. 
+I am aware of a range of data sets at the US federal level which should theoretically be possible to string together, but I have not yet evaluated them. It's possible that once I look at them more closely, I may need to change the scope of the project, look for data outside the US, or at the US state level, rather than US federal government. 
 
 
 
