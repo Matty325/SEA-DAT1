@@ -1,5 +1,5 @@
 ##_What is the question you hope to answer?_
-I would like to collate several publically available data sources and APIs to investigate the linkage between campaign donations and the behavior of elected officials at the US federal level, and see if there are any statisticallyl valid relationships. 
+I would like to collate several publically available data sources and APIs to investigate the linkage between campaign donations and the behavior of elected officials at the US federal level, and see if there are any statistically valid relationships. 
 
 
 ##_What data are you planning to use to answer that question?_
