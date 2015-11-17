@@ -56,7 +56,7 @@ print(group_item_count)
 print(group_sum_item_price)
 print(avg_price)
 
-##avg price per order = $6.94
+##avg price per order = $6.94.
     
 
 '''
@@ -95,7 +95,7 @@ avgtoppings = float(totaltoppingcount)/float(recordcount)
 print avgtoppings
 print type(avgtoppings)
 
-## avvg count of toppings for burritos is 5.395
+## avvg count of toppings for burritos is 5.395. I got this counting the number of commas for each buritto item and adding one to that total, since the number of commas in the list is one less than the count of items
 
 '''
 ADVANCED LEVEL
