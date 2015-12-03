@@ -1,0 +1,10 @@
+why is reproducibility important
+Verify results
+Forces focus on understanding the analysis and content
+
+
+3 components of delivering
+providing same data in rawest form available, using tidy data principles
+providing your codebook/data dictionary
+describign variables
+describing process 
